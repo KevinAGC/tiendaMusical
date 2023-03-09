@@ -7,21 +7,21 @@
 		<artifactId>tiendamusical</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>tiendaMusical-services</artifactId>
-	<name>tiendaMusical-services</name>
+	<artifactId>tiendaMusical-data</artifactId>
+	<name>tiendaMusical-data</name>
 	<url>http://maven.apache.org</url>
 	<dependencies>
+		<!--::::::::::::::INTEGRADO DEPENDENCIA DEL PROYECTO TIENDA MUSICAL ENTITIES::::::::::::-->
+		<dependency>
+			<groupId>com.buenmaestro</groupId>
+			<artifactId>tiendamusical-entities</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>${junit-version}</version>
 			<scope>test</scope>
-		</dependency>
-		<!--::::::::::::::INTEGRADO DEPENDENCIA DEL PROYECTO TIENDA MUSICAL DATA::::::::::::-->
-		<dependency>
-			<groupId>com.buenmaestro</groupId>
-			<artifactId>tiendaMusical-data</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 </project>
